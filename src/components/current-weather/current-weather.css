@@ -1,0 +1,151 @@
+.weather {
+  width: 30%;
+  border-radius: 6px;
+  box-shadow: 10px -2px 30px 2px rgb(0 0 0 / 40%);
+  color: #c1a7f9;
+  background-color: #41279d;
+  margin: 20px auto;
+  padding: 0 20px 20px 20px;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.city {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.weather-desc {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  margin: 0;
+}
+
+.weather-icon {
+  margin-top: 15px;
+  width: 100px;
+  background-color: #fff;
+  border: 1px solid #c1a7f9;
+  box-shadow: 0 0 100px #c1a7f9;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.temperature {
+  font-weight: 600;
+  font-size: 70px;
+  width: auto;
+  letter-spacing: -5px;
+  margin: 10px 0;
+}
+
+.details {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parameter-label {
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.parameter-value {
+  text-align: right;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.parameter-row.top {
+  border-bottom: 1px solid #c1a7f9;
+  margin-bottom: 5px;
+}
+
+.parameter-row.top .parameter-label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+  .top {
+    flex-direction: column-reverse;
+  }
+
+  .temperature {
+    font-size: 60px;
+  }
+
+  .weather-icon {
+    margin-bottom: 15px;
+  }
+
+  .bottom {
+    flex-direction: column;
+  }
+
+  .details {
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .weather {
+    width: 50%;
+  }
+
+  .city {
+    font-size: 25px;
+  }
+
+  .weather-desc {
+    font-size: 20px;
+  }
+
+  .temperature {
+    font-size: 100px;
+  }
+
+  .parameter-label,
+  .parameter-value {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .weather {
+    width: 80%;
+  }
+
+  .city {
+    font-size: 45px;
+  }
+
+  .weather-desc {
+    font-size: 30px;
+  }
+
+  .temperature {
+    font-size: 200px;
+  }
+
+  .parameter-label,
+  .parameter-value {
+    font-size: 18px;
+  }
+}
